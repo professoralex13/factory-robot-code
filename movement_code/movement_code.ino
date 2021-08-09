@@ -1,3 +1,7 @@
+/** This Code is used for raw testing, it is designed to have minimal abstraction in order to minimize problems caused by code during the component testing process */
+/** Writtern by Alex Cutforth - 2021 */
+
+
 //{PWMPin, control1, control2}
 const int lMotorPins[3] = {3, 4, 5};
 const int rMotorPins[3] = {11, 10, 9};

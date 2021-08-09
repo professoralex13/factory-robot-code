@@ -1,3 +1,6 @@
+/** This is the master script for my factory robot for electronics class, it controls all aspects of the robot */
+/** Writtern by Alex Cutforth - 2021 */
+
 #include <math.h>
 //{PWMPin, control1, control2}
 const int lMotorPins[3] = {3, 4, 5};
