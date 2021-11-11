@@ -25,26 +25,20 @@ void DriveMotors(int lSpeed, int rSpeed)
   analogWrite(rMotorPins[0], fabs(rSpeed * PWMMultiplier));
 
   // Set the direction control pins based on the sign(+ve or -ve) of the speed values
-  if(lSpeed > 0)
-  {
+  if(lSpeed > 0) {
     digitalWrite(lMotorPins[1], LOW);
     digitalWrite(lMotorPins[2], HIGH);
-  }
-  else
-  {
+  } else {
     digitalWrite(lMotorPins[1], HIGH);
     digitalWrite(lMotorPins[2], LOW);
   }
   
-  if(rSpeed > 0)
-  {
+  if(rSpeed > 0) {
     digitalWrite(rMotorPins[1], LOW);
     digitalWrite(rMotorPins[2], HIGH);
-  }
-  else
-  {
-     digitalWrite(rMotorPins[1], HIGH);
-     digitalWrite(rMotorPins[2], LOW);
+  } else {
+    digitalWrite(rMotorPins[1], HIGH);
+    digitalWrite(rMotorPins[2], LOW);
   }
 }
 void setup() {
